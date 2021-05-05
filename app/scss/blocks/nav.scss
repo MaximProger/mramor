@@ -1,0 +1,28 @@
+.nav__item {
+  margin-bottom: 6vh;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav__link {
+  font-family: "EuropeExt";
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Slick -->
-	<!-- <link rel="stylesheet" href="./css/include/slick.css"> -->
+	<link rel="stylesheet" href="./css/include/slick.css">
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="./css/app.min.css">
@@ -16,18 +16,686 @@
 
 <body>
 
-	<header class="header" id="header">
+	<!-- Header -->
+	<header class="header header--absolute" id="header">
 		<div class="container">
+			<div class="header__inner">
+
+				<div class="header__left">
+					<div class="header__menu">
+						<button class="header__menu__btn" type="button" id="menuBtn">
+							<span class="header__menu__icon"></span>
+							<span class="header__menu__text">
+								меню
+							</span>
+						</button>
+					</div>
+					<div class="header__submenu" id="submenuHeader">
+						<div class="header__submenu__top" id="submenuHeaderTop">
+							<img src="./images/dest/icons/crystal.svg" alt="crystal" class="header__submenu__icon">
+							<span class="header__submenu__text">
+								Изделия из камня
+							</span>
+							<img src="./images/dest/icons/arrow.svg" alt="arrow" class="header__submenu__arrow">
+						</div>
+
+						<nav class="header__submenu__nav" id="submenuNav">
+
+							<a href="#" class="header__submenu__item">
+								Столешницы
+							</a>
+							<a href="#" class="header__submenu__item">
+								Подоконники
+							</a>
+							<a href="#" class="header__submenu__item">
+								Лестницы
+							</a>
+							<a href="#" class="header__submenu__item">
+								Каминные порталы
+							</a>
+							<a href="#" class="header__submenu__item">
+								Брусчатка
+							</a>
+							<a href="#" class="header__submenu__item">
+								Полы
+							</a>
+							<a href="#" class="header__submenu__item">
+								Стены
+							</a>
+							<a href="#" class="header__submenu__item">
+								Хаммамы
+							</a>
+							<a href="#" class="header__submenu__item">
+								Мойки
+							</a>
+							<a href="#" class="header__submenu__item">
+								Барные стойки
+							</a>
+							<a href="#" class="header__submenu__item">
+								Ступени
+							</a>
+						</nav>
+					</div>
+				</div>
+
+				<a href="/" class="logo">
+					<img src="./images/dest/icons/logo.svg" alt="logo" class="logo__img">
+				</a>
+
+				<div class="header__right">
+					<div class="header__phone">
+						<img src="./images/dest/icons/phone.svg" alt="phone">
+						<a href="tel:+7(495)2155145" class="header__phone__value">
+							+ 7 (495) 215 51 45
+						</a>
+					</div>
+					<a href="#" class="header__link link__recall recall">
+						обратный звонок
+					</a>
+				</div>
+
+
+
+			</div>
 		</div>
 	</header>
+	<!-- Header END -->
 
 	<main class="main">
+
+		<!-- Intro -->
+		<section class="section first__block intro" id="intro">
+			<div class="container">
+				<div class="intro__inner">
+					<h1 class="intro__title">
+						изготавливаем изделия<br> любой сложности<br> из натурального камня
+					</h1>
+				</div>
+			</div>
+		</section>
+		<!-- Intro END -->
+
+		<!-- Benefits -->
+		<section class="section benefits">
+			<div class="container">
+				<div class="benefits__inner">
+
+					<div class="benefits__item benefits__item--active">
+						<div class="benefits__item__wrapper">
+							<div class="benefits__head">
+								<span class="benefits__icon">
+									<img src="./images/dest/benefits/1.svg" alt="benefit">
+								</span>
+								<h3 class="benefits__title">
+									контроль качества
+								</h3>
+							</div>
+							<p class="benefits__text">
+								100 % контроль продукции в процессе её производства
+							</p>
+						</div>
+
+						<div class="benefits__item__bot">
+							<span class="benefits__item__number">01</span>
+							<span class="benefits__figure"></span>
+						</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__item__wrapper">
+							<div class="benefits__head">
+								<span class="benefits__icon">
+									<img src="./images/dest/benefits/2.svg" alt="benefit">
+								</span>
+								<h3 class="benefits__title">
+									Прямые поставки камня
+								</h3>
+							</div>
+							<p class="benefits__text">
+								Вы не платите за посредничество, стоимость изделий будет ниже
+							</p>
+						</div>
+
+						<div class="benefits__item__bot">
+							<span class="benefits__item__number">02</span>
+							<span class="benefits__figure"></span>
+						</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__item__wrapper">
+							<div class="benefits__head">
+								<span class="benefits__icon">
+									<img src="./images/dest/benefits/3.svg" alt="benefit">
+								</span>
+								<h3 class="benefits__title">
+									собственное экологичное производство
+								</h3>
+							</div>
+							<p class="benefits__text">
+								Оснащено высокотехнологичным оборудованием
+							</p>
+						</div>
+
+						<div class="benefits__item__bot">
+							<span class="benefits__item__number">03</span>
+							<span class="benefits__figure"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Benefits END -->
+
+		<!-- Offer -->
+		<section class="section offer">
+			<div class="container">
+				<h2 class="offer__title">
+					мы предлагаем
+				</h2>
+				<div class="portfolio">
+					<div class="portfolio__inner">
+						<div class="portfolio__col">
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/1.webp">
+									<img width="360" height="520" src="./images/dest/portfolio/1.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									стены
+								</h3>
+							</a>
+
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/2.webp">
+									<img width="360" height="320" src="./images/dest/portfolio/2.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									Барные стойки
+								</h3>
+							</a>
+
+							<a href="#" class="portfolio__item portfolio__item--special">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/3.webp">
+									<img width="360" height="487" src="./images/dest/portfolio/3.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									полы
+								</h3>
+							</a>
+						</div>
+
+						<div class="portfolio__col">
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/4.webp">
+									<img width="360" height="337" src="./images/dest/portfolio/4.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									мойки
+								</h3>
+							</a>
+
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/5.webp">
+									<img width="360" height="265" src="./images/dest/portfolio/5.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									столешницы
+								</h3>
+							</a>
+
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/6.webp">
+									<img width="360" height="332" src="./images/dest/portfolio/6.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									каминные <br>порталы
+								</h3>
+							</a>
+
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/7.webp">
+									<img width="360" height="355" src="./images/dest/portfolio/7.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									хамамы
+								</h3>
+							</a>
+						</div>
+
+						<div class="portfolio__col">
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/8.webp">
+									<img width="360" height="425" src="./images/dest/portfolio/8.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									подоконники
+								</h3>
+							</a>
+
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/9.webp">
+									<img width="360" height="320" src="./images/dest/portfolio/9.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									ступени
+								</h3>
+							</a>
+
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/10.webp">
+									<img width="360" height="341" src="./images/dest/portfolio/10.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									лестницы
+								</h3>
+							</a>
+
+							<a href="#" class="portfolio__item">
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/portfolio/11.webp">
+									<img width="360" height="216" src="./images/dest/portfolio/11.png" alt="work" class="portfolio__img">
+								</picture>
+								<h3 class="portfolio__title">
+									брусчатка
+								</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="offer__stats">
+					<h3 class="offer__stats__title">
+						у нас более
+					</h3>
+					<picture decoding="async">
+						<source type="image/webp" srcset="./images/dest/130.webp">
+						<img src="./images/dest/130.png" alt="130" class="offer__stats__number">
+					</picture>
+
+					<h3 class="offer__stats__title offer__stats__title--right">
+						видов камня
+					</h3>
+				</div>
+			</div>
+		</section>
+		<!-- Offer END -->
+
+		<!-- Incarnate -->
+		<section class="section incarnate">
+			<div class="incarnate__inner">
+
+				<div class="incarnate__head">
+					<div class="container">
+						<div class="incarnate__head__wrapper">
+							<span class="incarnate__suptitle">
+								наши работы
+							</span>
+							<h2 class="incarnate__title">воплощаем в жизнь самые необычные пожелания </h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="incarnate__slider" id="incarnateSlider">
+					<div class="incarnate__slide">
+						<div class="incarnate__slide__wrapper">
+							<div class="incarnate__left">
+								<div class="incarnate__left__col">
+									<div class="incarnate__slide__number">
+										01
+									</div>
+									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/incarnate/1.webp">
+										<img width="208" height="207.87" src="./images/dest/incarnate/1.png" alt="image"
+											class="incarnate__slide__img">
+									</picture>
+								</div>
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/incarnate/2.webp">
+									<img width="455" height="560" src="./images/dest/incarnate/2.png" alt="image"
+										class="incarnate__slide__img">
+								</picture>
+
+							</div>
+							<div class="incarnate__center">
+								<h3 class="incarnate__inner__title">
+									Коттеджный поселок Никольский бульвар
+								</h3>
+								<p class="incarnate__text">
+									Респектабельный коттеджный
+									поселок «Никольский бульвар»
+									в Московской области полностью
+									соответствует своему статусу:
+								</p>
+								<div class="incarnate__benefits">
+									<span class="incarnate__check">
+										<img src="./images/dest/icons/check.svg" alt="check">
+									</span>
+									<span class="incarnate__benrfits__text">
+										ваша жизнь станет<br> комфортной и безопасной
+									</span>
+								</div>
+								<a href="#" class="go__over">
+									перейти
+								</a>
+							</div>
+							<div class="incarnate__right">
+								<div class="incarnate__right__col">
+									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/incarnate/3.webp">
+										<img width="350" height="331" src="./images/dest/incarnate/3.png" alt="image"
+											class="incarnate__slide__img">
+									</picture>
+									<div class="incarnate__right__row">
+										<picture decoding="async">
+											<source type="image/webp" srcset="./images/dest/incarnate/4.webp">
+											<img width="208" height="207.87" src="./images/dest/incarnate/4.png" alt="image"
+												class="incarnate__slide__img">
+										</picture>
+										<picture decoding="async">
+											<source type="image/webp" srcset="./images/dest/incarnate/5.webp">
+											<img width="208" height="207.87" src="./images/dest/incarnate/5.png" alt="image"
+												class="incarnate__slide__img">
+										</picture>
+									</div>
+								</div>
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/incarnate/6.webp">
+									<img width="226" height="214" src="./images/dest/incarnate/6.png" alt="image"
+										class="incarnate__slide__img">
+								</picture>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="incarnate__slide">
+						<div class="incarnate__slide__wrapper">
+							<div class="incarnate__left">
+								<div class="incarnate__left__col">
+									<div class="incarnate__slide__number">
+										02
+									</div>
+									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/incarnate/1.webp">
+										<img width="208" height="207.87" src="./images/dest/incarnate/1.png" alt="image"
+											class="incarnate__slide__img">
+									</picture>
+								</div>
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/incarnate/2.webp">
+									<img width="455" height="560" src="./images/dest/incarnate/2.png" alt="image"
+										class="incarnate__slide__img">
+								</picture>
+
+							</div>
+							<div class="incarnate__center">
+								<h3 class="incarnate__inner__title">
+									Коттеджный поселок Никольский бульвар
+								</h3>
+								<p class="incarnate__text">
+									Респектабельный коттеджный
+									поселок «Никольский бульвар»
+									в Московской области полностью
+									соответствует своему статусу:
+								</p>
+								<div class="incarnate__benefits">
+									<span class="incarnate__check">
+										<img src="./images/dest/icons/check.svg" alt="check">
+									</span>
+									<span class="incarnate__benrfits__text">
+										ваша жизнь станет<br> комфортной и безопасной
+									</span>
+								</div>
+								<a href="#" class="go__over">
+									перейти
+								</a>
+							</div>
+							<div class="incarnate__right">
+								<div class="incarnate__right__col">
+									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/incarnate/3.webp">
+										<img width="350" height="331" src="./images/dest/incarnate/3.png" alt="image"
+											class="incarnate__slide__img">
+									</picture>
+									<div class="incarnate__right__row">
+										<picture decoding="async">
+											<source type="image/webp" srcset="./images/dest/incarnate/4.webp">
+											<img width="208" height="207.87" src="./images/dest/incarnate/4.png" alt="image"
+												class="incarnate__slide__img">
+										</picture>
+										<picture decoding="async">
+											<source type="image/webp" srcset="./images/dest/incarnate/5.webp">
+											<img width="208" height="207.87" src="./images/dest/incarnate/5.png" alt="image"
+												class="incarnate__slide__img">
+										</picture>
+									</div>
+								</div>
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/incarnate/6.webp">
+									<img width="226" height="214" src="./images/dest/incarnate/6.png" alt="image"
+										class="incarnate__slide__img">
+								</picture>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="incarnate__slide">
+						<div class="incarnate__slide__wrapper">
+							<div class="incarnate__left">
+								<div class="incarnate__left__col">
+									<div class="incarnate__slide__number">
+										03
+									</div>
+									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/incarnate/1.webp">
+										<img width="208" height="207.87" src="./images/dest/incarnate/1.png" alt="image"
+											class="incarnate__slide__img">
+									</picture>
+								</div>
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/incarnate/2.webp">
+									<img width="455" height="560" src="./images/dest/incarnate/2.png" alt="image"
+										class="incarnate__slide__img">
+								</picture>
+
+							</div>
+							<div class="incarnate__center">
+								<h3 class="incarnate__inner__title">
+									Коттеджный поселок Никольский бульвар
+								</h3>
+								<p class="incarnate__text">
+									Респектабельный коттеджный
+									поселок «Никольский бульвар»
+									в Московской области полностью
+									соответствует своему статусу:
+								</p>
+								<div class="incarnate__benefits">
+									<span class="incarnate__check">
+										<img src="./images/dest/icons/check.svg" alt="check">
+									</span>
+									<span class="incarnate__benrfits__text">
+										ваша жизнь станет<br> комфортной и безопасной
+									</span>
+								</div>
+								<a href="#" class="go__over">
+									перейти
+								</a>
+							</div>
+							<div class="incarnate__right">
+								<div class="incarnate__right__col">
+									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/incarnate/3.webp">
+										<img width="350" height="331" src="./images/dest/incarnate/3.png" alt="image"
+											class="incarnate__slide__img">
+									</picture>
+									<div class="incarnate__right__row">
+										<picture decoding="async">
+											<source type="image/webp" srcset="./images/dest/incarnate/4.webp">
+											<img width="208" height="207.87" src="./images/dest/incarnate/4.png" alt="image"
+												class="incarnate__slide__img">
+										</picture>
+										<picture decoding="async">
+											<source type="image/webp" srcset="./images/dest/incarnate/5.webp">
+											<img width="208" height="207.87" src="./images/dest/incarnate/5.png" alt="image"
+												class="incarnate__slide__img">
+										</picture>
+									</div>
+								</div>
+								<picture decoding="async">
+									<source type="image/webp" srcset="./images/dest/incarnate/6.webp">
+									<img width="226" height="214" src="./images/dest/incarnate/6.png" alt="image"
+										class="incarnate__slide__img">
+								</picture>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="incarnate__nav">
+					<div class="container">
+						<div class="incarnate__nav__wrapper">
+							<button type="button" class="incarnate__nav__btn incarnate__nav__btn--prev" id="incarnatePrev">
+								<span></span>
+							</button>
+							<div class="incarnate__nav__dots" id="incarnateNav">
+								<div class="incarnate__nav__dots__item"></div>
+								<div class="incarnate__nav__dots__item"></div>
+								<div class="incarnate__nav__dots__item"></div>
+							</div>
+							<button type="button" class="incarnate__nav__btn incarnate__nav__btn--next" id="incarnateNext">
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Incarnate END -->
+
+		<!-- Receive -->
+		<section class="section receive">
+			<div class="container">
+				<div class="receive__inner">
+					<div class="receive__head">
+						<h2 class="receive__title">
+							<span></span>
+						</h2>
+						<div class="receive__feedback">
+							<form id="receiveForm" name="receiveForm" class="receive__form"></form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Receive END -->
 	</main>
 
+	<!-- Footer -->
 	<footer class="footer" id="footer">
 		<div class="container">
 		</div>
 	</footer>
+	<!-- Footer END -->
+
+	<!-- Modals -->
+	<div class="menu" id="menu">
+		<div class="menu__inner">
+			<div class="menu__wrapper">
+				<div class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								барельефы
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								изделия из камня
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								наши работы
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								о компании
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu__info">
+					<div class="menu__info__wrapper">
+						<div class="menu__info__item menu__info__item--special">
+							<h3 class="menu__info__title">
+								<img src="./images/dest/icons/address__icon.svg" alt="address" class="menu__info__icon">
+								<span>
+									адрес
+								</span>
+							</h3>
+							<p class="menu__info__content">
+								г. Москва, ул. Складочная, <br>д. 3, стр. 3, офис 181
+							</p>
+						</div>
+
+						<div class="menu__info__item">
+							<h3 class="menu__info__title">
+								<img src="./images/dest/icons/phone__icon.svg" alt="phone__icon" class="menu__info__icon">
+								<span>
+									телефон
+								</span>
+							</h3>
+							<p class="menu__info__content">
+								+7 (495) 215 51 45
+							</p>
+						</div>
+
+						<div class="menu__info__item">
+							<h3 class="menu__info__title">
+								<img src="./images/dest/icons/email.svg" alt="email" class="menu__info__icon">
+								<span>
+									Email
+								</span>
+							</h3>
+							<p class="menu__info__content">
+								sales@sayanmramor.ru
+							</p>
+						</div>
+					</div>
+
+					<div class="social">
+						<a href="#" class="social__item social__item--youtube">
+							<span></span>
+						</a>
+						<a href="#" class="social__item social__item--vkontakte">
+							<span></span>
+						</a>
+						<a href="#" class="social__item social__item--instagram">
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Modals END -->
 
 	<!-- jQuery -->
 	<script src="./js/include/jquery.min.js"></script>
@@ -36,7 +704,7 @@
 	<!-- <script src="./js/include/jquery.maskedinput.min.js"></script> -->
 
 	<!-- Slick -->
-	<!-- <script src="./js/include/slick.min.js"></script> -->
+	<script src="./js/include/slick.min.js"></script>
 
 	<!-- Custom JS -->
 	<script src="./js/app.min.js"></script>

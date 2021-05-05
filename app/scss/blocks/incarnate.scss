@@ -1,0 +1,240 @@
+.incarnate {
+  background: #f3f3f3;
+  padding-top: 120px;
+}
+
+.incarnate__head__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.incarnate__suptitle {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.7;
+  font-family: "EuropeExt";
+  text-transform: uppercase;
+  margin-right: 237px;
+  white-space: nowrap;
+}
+
+.incarnate__title {
+  font-family: "EuropeExt";
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.incarnate__slider {
+  .slick-list {
+    width: 100vw;
+  }
+}
+
+.incarnate__slide {
+  width: 100vw !important;
+  min-width: 100vw;
+}
+
+.incarnate__slide__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.incarnate__left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.incarnate__left__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 17px;
+}
+
+.incarnate__slide__number {
+  height: 100px;
+  width: 100px;
+  background: #d1d7e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "EuropeExt";
+  margin-bottom: 20px;
+}
+
+.incarnate__center {
+  width: 300px;
+  margin-left: 35px;
+  margin-right: 15px;
+}
+
+.incarnate__inner__title {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "EuropeExt";
+  color: #000;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.incarnate__text {
+  color: #000;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.incarnate__benefits {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 35px;
+}
+
+.incarnate__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  margin-right: 13px;
+}
+
+.incarnate__benrfits__text {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.incarnate__right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.incarnate__right__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-right: 17px;
+}
+
+.incarnate__right__row {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  picture {
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+
+.incarnate__slide__img {
+  display: block;
+}
+
+.incarnate__nav {
+  margin-top: 60px;
+  padding: 30px 0;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+
+.incarnate__nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.incarnate__nav__btn {
+  cursor: pointer;
+  transition: all 0.2s linear;
+  span {
+    display: inline-block;
+    width: 73px;
+    height: 7px;
+    background: url("../../images/dest/icons/slider__arrow.svg") no-repeat
+      center;
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.incarnate__nav__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 1px;
+
+  .slick-slide {
+    margin-right: 48px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.slick-current.slick-active {
+      .incarnate__nav__dots__item {
+        background: $orange;
+      }
+    }
+  }
+}
+
+.incarnate__nav__dots__item {
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  min-height: 1px;
+  min-width: 60px;
+  background: #dadada;
+  margin-right: 20px;
+  transition: all 0.3s linear;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1919px) {
+  .incarnate__slide {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

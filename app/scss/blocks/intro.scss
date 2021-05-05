@@ -1,0 +1,33 @@
+.intro {
+  height: 784px;
+  background: url("../../images/dest/intro__bg.png") no-repeat center;
+  background-size: cover;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.intro__inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro__title {
+  font-size: 48px;
+  line-height: 70px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "EuropeExt";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

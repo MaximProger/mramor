@@ -1,0 +1,42 @@
+.offer {
+  background: url("../../images/dest/offer__bg.png") no-repeat center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.offer__title {
+  font-size: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "EuropeExt";
+  margin-bottom: 45px;
+}
+
+.offer__stats {
+  padding-top: 115px;
+}
+
+.offer__stats__title {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: "EuropeExt";
+  text-transform: uppercase;
+
+  &--right {
+    text-align: right;
+  }
+}
+
+.offer__stats__number {
+  display: block;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

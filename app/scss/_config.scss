@@ -1,6 +1,8 @@
 // USER VARIABLES SECTION
 
-$text: #000;
+$text: #161616;
+$orange: #e95402;
+$brown: #292525;
 
 // Max-width
 $tablet: 1199px;
@@ -8,19 +10,72 @@ $mobile: 767px;
 $mobile-sm: 375px;
 
 // FONTS LOAD SECTION
-@mixin font($fname, $fstyle, $fweight, $furl) {
+@mixin font($fname, $fstyle, $fweight, $furl, $format) {
   @font-face {
     font-family: $fname;
     font-style: $fstyle;
     font-weight: $fweight;
-    src: local($fname), url($furl) format("woff2");
+    src: local($fname), url($furl) format($format);
     // font-display: swap; // Uncomment to initially display system fonts
   }
 }
 
-@include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
-@include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
-@include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
+@include font(
+  "Montserrat",
+  normal,
+  300,
+  "../fonts/Montserrat-Light.woff2",
+  "woff2"
+);
+@include font(
+  "Montserrat",
+  normal,
+  400,
+  "../fonts/Montserrat-Regular.woff2",
+  "woff2"
+);
+@include font(
+  "Montserrat",
+  normal,
+  500,
+  "../fonts/Montserrat-Medium.woff2",
+  "woff2"
+);
+@include font(
+  "Montserrat",
+  normal,
+  600,
+  "../fonts/Montserrat-SemiBold.woff2",
+  "woff2"
+);
+@include font(
+  "Montserrat",
+  normal,
+  700,
+  "../fonts/Montserrat-Bold.woff2",
+  "woff2"
+);
+@include font(
+  "Montserrat",
+  normal,
+  900,
+  "../fonts/Montserrat-ExtraBold.woff2",
+  "woff2"
+);
+@include font(
+  "StolzlDisplay",
+  normal,
+  400,
+  "../fonts/StolzlDisplay-Regular.woff2",
+  "woff2"
+);
+@include font(
+  "EuropeExt",
+  normal,
+  700,
+  "../fonts/EuropeExtBold.ttf",
+  "truetype"
+);
 
 .no-xl {
   display: none;

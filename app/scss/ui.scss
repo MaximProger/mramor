@@ -1,0 +1,65 @@
+body {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $text;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link__recall {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $orange;
+  border-bottom: 1px dashed $orange;
+  transition: all 0.2s linear;
+  font-family: "StolzlDisplay";
+  letter-spacing: 1px;
+
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.go__over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid $orange;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "EuropeExt";
+  text-decoration: none;
+  color: $orange;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: $orange;
+    color: #fff;
+  }
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

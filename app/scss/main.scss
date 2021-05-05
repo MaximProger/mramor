@@ -1,23 +1,16 @@
 @import "config";
 @import "reset";
-
-body {
-  font-family: "Roboto";
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 82.9%;
-  color: $text;
-  position: relative;
-  overflow-x: hidden;
-  min-width: 320px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+@import "ui";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/nav";
+@import "blocks/social";
+@import "blocks/intro";
+@import "blocks/benefits";
+@import "blocks/offer";
+@import "blocks/portfolio";
+@import "blocks/incarnate";
+@import "blocks/receive";
 
 @media (max-width: $tablet) {
 }

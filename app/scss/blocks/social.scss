@@ -1,0 +1,81 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.social__item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-right: 32px;
+  background: url("../../images/dest/icons/social__bg.svg");
+  transition: all 0.3s linear;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background: $orange;
+  }
+
+  span {
+    display: inline-block;
+    transition: all 0.3s linear;
+  }
+
+  &--youtube {
+    span {
+      width: 26px;
+      height: 20px;
+      background: url("../../images/dest/icons/youtube.svg") no-repeat center;
+    }
+
+    &:hover {
+      span {
+        background: url("../../images/dest/icons/youtube--white.svg") no-repeat
+          center;
+      }
+    }
+  }
+
+  &--vkontakte {
+    span {
+      width: 26px;
+      height: 16px;
+      background: url("../../images/dest/icons/vk.svg") no-repeat center;
+    }
+
+    &:hover {
+      span {
+        background: url("../../images/dest/icons/vk--white.svg") no-repeat
+          center;
+      }
+    }
+  }
+
+  &--instagram {
+    span {
+      width: 21px;
+      height: 21px;
+      background: url("../../images/dest/icons/instagram.svg") no-repeat center;
+    }
+
+    &:hover {
+      span {
+        background: url("../../images/dest/icons/instagram--white.svg")
+          no-repeat center;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
