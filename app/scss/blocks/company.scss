@@ -17,6 +17,8 @@
 
 .company__head__wrapper {
   max-width: 550px;
+  position: relative;
+  z-index: 3;
 }
 
 .company__title {
@@ -38,8 +40,23 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
   max-width: 595px;
+}
+
+.company__bg__wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.company__bg__link {
+  position: absolute;
+  top: 133px;
+  left: 260px;
+  transition: all 0.2s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .company__bg__line {
@@ -85,7 +102,55 @@
 }
 
 @media (max-width: $tablet) {
+  .company__head {
+    padding-left: 380px;
+  }
 }
 
 @media (max-width: $mobile) {
+  .company {
+    .container {
+      padding: 60px 15px;
+    }
+  }
+
+  .company__head {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .company__title {
+    font-size: 24px;
+  }
+
+  .company__body {
+    flex-wrap: wrap;
+  }
+
+  .company__line {
+    display: none;
+  }
+
+  .company__item {
+    margin-bottom: 40px;
+    width: 50%;
+  }
+
+  .company__item__title {
+    font-size: 24px;
+  }
+
+  .company__bg__line {
+    display: none;
+  }
+
+  .company__bg {
+    position: static;
+  }
+
+  .company__bg__link {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

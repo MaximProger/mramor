@@ -25,4 +25,15 @@
 }
 
 @media (max-width: $mobile) {
+  .contacts {
+    padding: 60px 0;
+
+    .menu__info__wrapper {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__title {
+    font-size: 24px;
+  }
 }

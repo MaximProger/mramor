@@ -2,6 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  &--footer {
+    margin-left: 80px;
+    .social__item {
+      margin-right: 8px;
+    }
+  }
 }
 
 .social__item {
@@ -78,4 +85,9 @@
 }
 
 @media (max-width: $mobile) {
+  .social {
+    &--footer {
+      margin: 20px 0;
+    }
+  }
 }

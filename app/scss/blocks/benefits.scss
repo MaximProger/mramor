@@ -101,7 +101,39 @@
 }
 
 @media (max-width: $tablet) {
+  .benefits__icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+  }
+
+  .benefits__title {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: $mobile) {
+  .benefits__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits__item {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .benefits__head {
+    justify-content: space-between;
+  }
+
+  .benefits__icon {
+    margin-right: 0;
+  }
 }

@@ -39,4 +39,19 @@
 }
 
 @media (max-width: $mobile) {
+  .offer {
+    padding: 60px 0;
+  }
+
+  .offer__title {
+    font-size: 24px;
+  }
+
+  .offer__stats {
+    padding-top: 60px;
+  }
+
+  .offer__stats__title {
+    font-size: 24px;
+  }
 }

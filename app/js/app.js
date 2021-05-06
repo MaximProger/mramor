@@ -75,4 +75,31 @@ $(document).ready(function () {
 
   // Макса для телефона
   $(".input--phone").mask("+7 (999) 999 - 9999");
+
+  // Модалльное окно
+  function closeModal() {
+    $(".mask").fadeOut();
+    $("html").removeClass("noscroll");
+    $(".modal").slideUp(300);
+  }
+
+  function openModal($modal) {
+    $(".mask").fadeIn();
+    $("html").addClass("noscroll");
+    $modal.slideDown(500);
+  }
+
+  $(".recall").click((evt) => {
+    evt.preventDefault();
+    openModal($("#recallModal"));
+  });
+
+  $(".mask").click(() => {
+    closeModal();
+  });
+
+  $(".modal__close").click((evt) => {
+    evt.preventDefault();
+    closeModal();
+  });
 });

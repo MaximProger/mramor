@@ -22,7 +22,17 @@
 }
 
 @media (max-width: $tablet) {
+  .nav__link {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: $mobile) {
+  .menu__wrapper {
+    padding: 0;
+    text-align: center;
+  }
+  .nav__link {
+    font-size: 18px;
+  }
 }

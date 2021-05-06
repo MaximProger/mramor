@@ -1,0 +1,168 @@
+.footer {
+  padding: 115px 0;
+  background: #18181a;
+}
+
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+
+  .header__phone {
+    margin-right: 0;
+  }
+}
+
+.footer__body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.footer__body__left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer__body__right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer__inner__title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.22;
+  font-family: "EuropeExt";
+  color: #fff;
+  white-space: nowrap;
+  margin-right: 70px;
+}
+
+.footer__nav__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer__nav {
+  margin-right: 60px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__nav__link {
+  display: block;
+  margin-bottom: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s linear;
+  line-height: 1;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.footer__bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+.footer__policy {
+  color: #656567;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom: 1px dashed #656567;
+  text-decoration: none;
+  transition: all 0.2s linear;
+
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: $tablet) {
+  .footer__body {
+    flex-direction: column;
+  }
+
+  .footer__body__right {
+    margin-top: 50px;
+
+    .footer__inner__title {
+      margin-right: 135px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .footer {
+    padding: 60px 0;
+  }
+
+  .footer__top {
+    flex-direction: column;
+
+    .logo {
+      margin: 25px 0;
+    }
+
+    .header__phone {
+      display: block;
+    }
+  }
+
+  .footer__body {
+    margin-bottom: 0;
+  }
+
+  .footer__body__left {
+    flex-direction: column;
+  }
+
+  .footer__inner__title {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .footer__nav__list {
+    flex-direction: column;
+  }
+
+  .footer__nav {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .footer__nav__link {
+    margin-bottom: 20px;
+  }
+
+  .footer__body__right {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .footer__bot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

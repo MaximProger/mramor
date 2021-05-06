@@ -64,4 +64,29 @@
 }
 
 @media (max-width: $mobile) {
+  .why {
+    padding: 60px 0;
+  }
+
+  .why__title {
+    font-size: 24px;
+  }
+
+  .why__item {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .why__left {
+    margin-bottom: 15px;
+  }
+
+  .why__arrow {
+    display: none;
+  }
+
+  .why__description {
+    width: 100%;
+    text-align: center;
+  }
 }

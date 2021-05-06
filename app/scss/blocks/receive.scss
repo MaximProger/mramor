@@ -58,4 +58,37 @@
 }
 
 @media (max-width: $mobile) {
+  .receive {
+    padding: 60px 0;
+  }
+
+  .receive__title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  .receive__head {
+    flex-direction: column;
+  }
+
+  .receive__feedback {
+    width: 100%;
+  }
+
+  .receive__form {
+    width: 100%;
+  }
+
+  .receive__form__bot {
+    justify-content: space-between;
+  }
+
+  .receive__book {
+    display: none;
+  }
+
+  .receive__bg {
+    display: none;
+  }
 }

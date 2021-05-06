@@ -164,4 +164,11 @@
 }
 
 @media (max-width: $mobile) {
+  .trust {
+    padding: 60px 0;
+  }
+
+  .trust__title {
+    font-size: 24px;
+  }
 }

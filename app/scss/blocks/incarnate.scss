@@ -242,7 +242,63 @@
 }
 
 @media (max-width: $tablet) {
+  .incarnate__head__wrapper {
+    justify-content: space-between;
+  }
+  .incarnate__suptitle {
+    margin-right: 100px;
+  }
 }
 
 @media (max-width: $mobile) {
+  .incarnate {
+    padding-top: 60px;
+  }
+
+  .incarnate__head__wrapper {
+    flex-direction: column;
+  }
+  .incarnate__suptitle {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .incarnate__title {
+    font-size: 24px;
+  }
+
+  .incarnate__slide__wrapper {
+    flex-direction: column;
+  }
+
+  .incarnate__right {
+    display: none;
+  }
+
+  .incarnate__center {
+    margin: 0;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .incarnate__inner__title {
+    text-align: center;
+  }
+
+  .incarnate__benefits {
+    justify-content: center;
+  }
+
+  .incarnate__go__over {
+    margin: 0 auto;
+  }
+
+  .incarnate__text {
+    margin-top: 30px;
+  }
+
+  .incarnate__nav {
+    display: none;
+  }
 }

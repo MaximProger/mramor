@@ -58,7 +58,37 @@
 }
 
 @media (max-width: $tablet) {
+  .portfolio__img {
+    width: 240px;
+    display: block;
+  }
+
+  .portfolio__col {
+    height: 930px;
+  }
+
+  .portfolio__title {
+    top: 30px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: $mobile) {
+  .portfolio__inner {
+    flex-direction: column;
+  }
+
+  .portfolio__col {
+    height: auto;
+    align-items: center;
+    width: 100%;
+  }
+
+  .portfolio__item {
+    margin-bottom: 15px;
+  }
+
+  .portfolio__img {
+    width: 320px;
+  }
 }
