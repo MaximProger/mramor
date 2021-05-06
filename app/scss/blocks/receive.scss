@@ -1,3 +1,59 @@
+.receive {
+  background: #f3f3f3;
+  padding-top: 120px;
+}
+
+.receive__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.receive__title {
+  color: #000;
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "EuropeExt";
+
+  span {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+  }
+}
+
+.receive__form {
+  width: 278px;
+}
+
+.receive__form__bot {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.receive__submit {
+  margin-left: 20px;
+}
+
+.receive__bg {
+  position: absolute;
+  right: 163px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.receive__bot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
 @media (max-width: $tablet) {
 }
 

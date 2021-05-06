@@ -158,15 +158,15 @@
 
 .incarnate__nav {
   margin-top: 60px;
-  padding: 30px 0;
-  border-top: 1px solid #dadada;
-  border-bottom: 1px solid #dadada;
 }
 
 .incarnate__nav__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
 }
 
 .incarnate__nav__btn {
@@ -178,6 +178,7 @@
     height: 7px;
     background: url("../../images/dest/icons/slider__arrow.svg") no-repeat
       center;
+    transition: all 0.2s linear;
   }
 
   &--next {
@@ -185,7 +186,10 @@
   }
 
   &:hover {
-    opacity: 0.7;
+    span {
+      background: url("../../images/dest/icons/slider__arrow--orange.svg")
+        no-repeat center;
+    }
   }
 }
 
@@ -224,6 +228,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    background: $orange;
   }
 }
 

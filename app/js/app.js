@@ -72,4 +72,7 @@ $(document).ready(function () {
     asNavFor: "#incarnateSlider",
     focusOnSelect: true,
   });
+
+  // Макса для телефона
+  $(".input--phone").mask("+7 (999) 999 - 9999");
 });

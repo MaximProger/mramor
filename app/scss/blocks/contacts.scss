@@ -1,0 +1,28 @@
+.contacts {
+  padding: 100px 0;
+}
+
+.contacts__inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contacts__title {
+  font-size: 44px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "EuropeExt";
+  margin-bottom: 55px;
+}
+
+.contacts__content {
+  width: 476px;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

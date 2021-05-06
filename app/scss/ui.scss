@@ -51,10 +51,167 @@ body {
   text-decoration: none;
   color: $orange;
   transition: all 0.2s linear;
+  cursor: pointer;
 
   &:hover {
     background: $orange;
     color: #fff;
+  }
+
+  &--invert {
+    background: $orange;
+    color: #fff;
+
+    &:hover {
+      color: $orange;
+      background: transparent;
+    }
+  }
+}
+
+.input__item {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  margin-bottom: 19px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--name {
+    .input__icon {
+      background: url("../images/dest/icons/input__name.svg") no-repeat center;
+    }
+
+    &:hover,
+    &:focus {
+      .input__icon {
+        background: url("../images/dest/icons/input__name--active.svg")
+          no-repeat center;
+      }
+    }
+  }
+
+  &--phone {
+    .input__icon {
+      background: url("../images/dest/icons/input__phone.svg") no-repeat center;
+    }
+
+    &:hover,
+    &:focus {
+      .input__icon {
+        background: url("../images/dest/icons/input__phone--active.svg")
+          no-repeat center;
+      }
+    }
+  }
+
+  &--email {
+    .input__icon {
+      background: url("../images/dest/icons/input__email.svg") no-repeat center;
+    }
+
+    &:hover,
+    &:focus {
+      .input__icon {
+        background: url("../images/dest/icons/input__email--active.svg")
+          no-repeat center;
+      }
+    }
+  }
+
+  &--textarea {
+    .input__icon {
+      top: 39px;
+      background: url("../images/dest/icons/input__message.svg") no-repeat
+        center;
+    }
+
+    &:hover,
+    &:focus {
+      .input__icon {
+        background: url("../images/dest/icons/input__message--active.svg")
+          no-repeat center;
+      }
+    }
+  }
+}
+
+.input {
+  height: 70px;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 10px;
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: $text;
+  border: none;
+
+  &::placeholder {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: #a3a3a3;
+  }
+
+  &--textarea {
+    height: 249px;
+    resize: none;
+    padding-top: 30px;
+  }
+}
+
+.input__icon {
+  display: inline-block;
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 22px;
+  height: 122px;
+  transition: all 0.2s linear;
+}
+
+.input__wrapper {
+  width: 98px;
+  position: relative;
+  text-align: center;
+}
+
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.input__file-icon-wrapper {
+  height: 27px;
+  width: 27px;
+  transition: all 0.2s linear;
+}
+
+.input__file-button-text {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.input__file-button {
+  height: 98px;
+  width: 98px;
+  min-height: 98px;
+  min-width: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #c1c1c1;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: #adadad;
   }
 }
 
