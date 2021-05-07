@@ -258,7 +258,7 @@
 
 @media (max-width: $mobile) {
   .header {
-    padding: 10px 0;
+    padding: 15px 0;
 
     &--fixed {
       padding: 10px 0;
@@ -270,13 +270,13 @@
   }
 
   .header__inner {
-    flex-direction: column;
+    // flex-direction: column;
   }
 
   .header__left {
-    width: 100%;
+    // width: 100%;
     justify-content: space-between;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
   }
 
   .header__menu {
@@ -284,8 +284,8 @@
   }
 
   .header__menu__btn {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 
     &--active {
       border: 1px solid #424941;
@@ -306,6 +306,7 @@
   }
 
   .header__submenu {
+    display: none;
     width: 150px;
   }
 

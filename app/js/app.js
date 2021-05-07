@@ -60,7 +60,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       infinite: true,
       centerMode: false,
-      autoplay: false,
+      autoplay: true,
       nextArrow: $("#incarnateNext"),
       prevArrow: $("#incarnatePrev"),
       asNavFor: "#incarnateNav",
