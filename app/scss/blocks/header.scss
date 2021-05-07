@@ -253,12 +253,11 @@
   }
 
   .header__menu__btn {
-    border: none;
-    border-radius: 0;
-    width: 19px;
-    height: 12.1px;
+    width: 30px;
+    height: 30px;
 
     &--active {
+      border: 1px solid #424941;
       .header__menu__icon {
         padding: 0;
         border: none;

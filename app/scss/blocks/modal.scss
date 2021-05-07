@@ -68,4 +68,49 @@
 }
 
 @media (max-width: $mobile) {
+  .modal {
+    max-width: 300px;
+    overflow-y: scroll;
+
+    .input {
+      height: 50px;
+    }
+  }
+  .modal__wrapper {
+    padding: 20px 15px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .modal__description {
+    font-size: 15px;
+  }
+
+  .modal__header {
+    margin-bottom: 25px;
+  }
+
+  .modal__close {
+    right: 0;
+    background: $orange;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal__submit {
+    height: 90px;
+    width: 90px;
+    font-size: 12px;
+    margin: 20px auto;
+  }
+
+  .modal__confirm__title {
+    font-size: 20px;
+  }
 }
