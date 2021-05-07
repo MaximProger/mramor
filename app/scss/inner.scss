@@ -1,0 +1,24 @@
+.inner {
+  padding-top: 55px;
+}
+
+.about {
+  background: url("../../images/dest/map__big.png") no-repeat center #f4f4f4;
+
+  .connect {
+    background: none;
+  }
+
+  .contacts {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+  .inner {
+    padding-top: 30px;
+  }
+}

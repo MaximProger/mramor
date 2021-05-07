@@ -1,12 +1,22 @@
 .header {
-  background-color: $text;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  background: url("../../images/dest/header__bg.png") $text no-repeat center;
+  background-size: cover;
+  padding: 35px 0;
   color: white;
-  transition: all 0.2s linear;
+  transition: all 0.5s linear;
+
+  &--absolute {
+    padding-top: 45px;
+    padding-bottom: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+  }
 
   &--fixed {
-    padding-top: 35;
+    padding-top: 25px;
     padding-bottom: 25px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -14,15 +24,20 @@
     right: 0;
     transform: translate3d(0, 0, 0);
     width: 100%;
-    z-index: 8;
-  }
+    z-index: 11;
+    background: #18181a;
 
-  &--absolute {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
+    &.header--fade {
+      background: transparent;
+      box-shadow: none;
+
+      .header__submenu,
+      .logo,
+      .header__right {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
   }
 }
 
@@ -219,6 +234,14 @@
 
   .header__menu__btn {
     width: 50px;
+    &--active {
+      border: 1px solid #424941;
+      .header__menu__icon {
+        padding: 0;
+        border: none;
+        margin-right: 0;
+      }
+    }
   }
 
   .header__menu__icon {
@@ -236,6 +259,14 @@
 @media (max-width: $mobile) {
   .header {
     padding: 10px 0;
+
+    &--fixed {
+      padding: 10px 0;
+      box-shadow: none;
+      position: inherit;
+      transform: none;
+      background: inherit;
+    }
   }
 
   .header__inner {

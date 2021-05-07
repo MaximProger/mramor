@@ -27,6 +27,7 @@ $(document).ready(function () {
   // Меню
   $("#menuBtn").click((evt) => {
     $("#menuBtn").toggleClass("header__menu__btn--active");
+    $("#header").toggleClass("header--fade");
     $("#menu").fadeToggle();
     $("html").toggleClass("noscroll");
   });

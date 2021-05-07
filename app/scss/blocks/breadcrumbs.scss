@@ -1,0 +1,32 @@
+.breadcrumbs__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.5;
+  color: #686868;
+  font-size: 14px;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: #4b4b4b;
+    opacity: 0.7;
+  }
+}
+
+.breadcrumbs__arrow {
+  display: inline-block;
+  margin: 0 14px;
+  color: #686868;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
