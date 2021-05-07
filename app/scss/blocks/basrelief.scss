@@ -55,14 +55,22 @@
   padding: 60px 0;
 }
 
+.basrelief__inner__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
 .basrelief__info {
   width: 377px;
+  margin-right: 48px;
 }
 
 .basrelief__description {
   background: #fff;
   padding: 60px;
   box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
 .basrelief__description__title {
@@ -115,12 +123,72 @@
   min-width: 163px;
 }
 
+.basrelief__gallery {
+  picture {
+    display: inline-block;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.basrelief__gallery__item {
+  display: block;
+  box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.1);
+  max-width: 377px;
+}
+
+.basrelief__detail__title {
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: EuropeExt;
+  margin-bottom: 25px;
+}
+
 .basrelief__bg {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: -1;
+}
+
+.basrelief__bg__wrapper {
+  position: relative;
+}
+
+.basrelief__detail__item {
+  position: absolute;
+  left: 0;
+  bottom: 55px;
+  width: 100%;
+}
+
+.basrelief__detail__description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 425px;
+}
+
+.basrelief__detail__icon {
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.basrelief__detail__text {
+  max-width: 300px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+
+  span {
+    font-weight: bold;
+  }
 }
 
 @media (max-width: $tablet) {
@@ -147,5 +215,35 @@
         }
       }
     }
+  }
+
+  .basrelief__inner {
+    padding: 30px 0;
+  }
+
+  .basrelief__inner__wrapper {
+    flex-direction: column;
+  }
+
+  .basrelief__info {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .basrelief__description {
+    padding: 15px;
+  }
+
+  .basrelief__detail__title {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .basrelief__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
