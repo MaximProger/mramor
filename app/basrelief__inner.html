@@ -11,7 +11,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="./css/app.min.css">
-  <title>Контакты</title>
+  <title>Дива</title>
 </head>
 
 <body>
@@ -103,7 +103,9 @@
 
   <main class="main">
 
-    <div class="inner feedback">
+    <div class="inner basrelief basrelief--inner">
+
+      <!-- Breadcrumbs -->
       <div class="breadcrumbs">
         <div class="container">
           <div class="breadcrumbs__wrapper">
@@ -114,117 +116,87 @@
             <span class="breadcrumbs__arrow">
               >
             </span>
-            <a href="./contacts.html" class="breadcrumbs__item">
-              Контакты
+            <a href="./basrelief.html" class="breadcrumbs__item">
+              Барельефы
+            </a>
+            <span class="breadcrumbs__arrow">
+              >
+            </span>
+            <a href="./basrelief__inner.html" class="breadcrumbs__item">
+              Дива
             </a>
           </div>
         </div>
       </div>
-      <!-- Connect -->
-      <div class="section connect">
+      <!-- Breadcrumbs END -->
 
-        <!-- Contacts -->
-        <section class="section contacts">
-          <div class="container">
-            <div class="contacts__inner">
-              <div class="contacts__content">
-                <h2 class="contacts__title">
-                  контакты
-                </h2>
-                <div class="menu__info__wrapper">
-                  <div class="menu__info__item menu__info__item--special">
-                    <h3 class="menu__info__title">
-                      <img src="./images/dest/icons/address__icon.svg" alt="address" class="menu__info__icon">
-                      <span>
-                        адрес
-                      </span>
-                    </h3>
-                    <p class="menu__info__content">
-                      г. Москва, ул. Складочная, <br>д. 3, стр. 3, офис 181
-                    </p>
-                  </div>
+      <div class="basrelief__inner">
+        <div class="container">
+          <div class="basrelief__inner__wrapper">
 
-                  <div class="menu__info__item">
-                    <h3 class="menu__info__title">
-                      <img src="./images/dest/icons/phone__icon.svg" alt="phone__icon" class="menu__info__icon">
-                      <span>
-                        телефон
-                      </span>
-                    </h3>
-                    <p class="menu__info__content">
-                      +7 (495) 215 51 45
-                    </p>
-                  </div>
+            <div class="basrelief__info">
+              <div class="basrelief__description">
+                <div class="basrelief__description__wrapper">
+                  <h2 class="basrelief__description__title">
+                    дива
+                  </h2>
+                  <p class="basrelief__description__text">
+                    Модель изготовлена
+                    из специального гипсового
+                    раствора с армирующими
+                    добавками.
+                  </p>
+                  <p class="basrelief__description__text">
+                    Итальянская технология
+                    производства. Является 100% экологически чистым продуктом,
+                    имеет уникальные свойства шумо-теплоизоляции.
+                  </p>
+                  <p class="basrelief__description__text">
+                    Абсолютно пожаробезопасен.
+                  </p>
 
-                  <div class="menu__info__item">
-                    <h3 class="menu__info__title">
-                      <img src="./images/dest/icons/email.svg" alt="email" class="menu__info__icon">
-                      <span>
-                        Email
-                      </span>
-                    </h3>
-                    <p class="menu__info__content">
-                      sales@sayanmramor.ru
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Contacts END -->
-
-
-        <!-- Question -->
-        <section class="section question">
-          <div class="container">
-            <h2 class="question__title">
-              задать вопрос эксперту
-            </h2>
-            <form id="questionForm" name="questionForm" class="form question__form">
-              <div class="question__inner">
-                <div class="question__col question__col--left">
-                  <div class="input__list">
+                  <form id="basreliefForm" name="basreliefForm" class="form basrelief__description__form">
                     <div class="input__item input__item--name">
-                      <input id="name2" name="name2" type="text" class="input" placeholder="Введите имя" required>
+                      <input id="name" name="name" type="text" class="input" placeholder="Введите имя" required>
                       <span class="input__icon"></span>
                     </div>
                     <div class="input__item input__item--phone">
-                      <input id="phone2" name="phone2" type="tel" class="input input--phone"
+                      <input id="phone" name="phone" type="tel" class="input input--phone"
                         placeholder="+ 7 (___)-___-__-__" required>
                       <span class="input__icon"></span>
                     </div>
 
-                    <div class="input__item input__item--email">
-                      <input id="email2" name="email2" type="email" class="input" placeholder="Введите Email" required>
-                      <span class="input__icon"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="question__col question__col--right">
-                  <div class="input__list">
-                    <div class="input__item input__item--textarea input__item--message">
-                      <textarea name="message2" id="message2" class="input input--textarea"
-                        placeholder="Введите cообщение" required></textarea>
-                      <span class="input__icon"></span>
-                    </div>
-                  </div>
-                  <p class="question__form__text">
-                    Нажимая «Задать вопрос эксперту» вы принимаете
-                    <a href="#">политику конфиденциальности</a>
-                  </p>
-                  <button type="submit" class="question__submit form__submit go__over go__over--invert">
-                    задать
-                  </button>
+                    <button type="submit" class="basrelief__description__submit form__submit">
+                      <img src="./images/dest/icons/rest.svg" alt="rest" class="basrelief__description__submit__text">
+                      <span class="go__over go__over--invert">
+                        <img src="./images/dest/icons/email__btn.svg" alt="send">
+                      </span>
+                    </button>
+                  </form>
                 </div>
               </div>
-            </form>
+            </div>
 
+            <div class="basrelief__detail">
+              <div class="basrelief__detail__description">
+                <img src="./images/dest/icons/ok.svg" alt="ok" class="basrelief__detail__icon">
+                <p class="basrelief__detail__text">
+                  <span>При отправке вся продукция
+                    страхуется. Поврежденный товар
+                    будет бесплатно заменен.</span>
+                </p>
+              </div>
+            </div>
           </div>
-        </section>
-        <!-- Question END -->
+        </div>
       </div>
-      <!-- Connect END -->
+
+
+
+      <picture decoding="async">
+        <source type="image/webp" srcset="./images/dest/diva.webp">
+        <img src="./images/dest/diva.png" alt="diva" class="basrelief__bg">
+      </picture>
     </div>
 
 

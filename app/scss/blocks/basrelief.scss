@@ -1,0 +1,151 @@
+.basrelief {
+  position: relative;
+
+  &--inner {
+    .breadcrumbs__item {
+      color: #fff;
+    }
+
+    .breadcrumbs__arrow {
+      color: #fff;
+    }
+  }
+
+  .portfolio {
+    padding: 60px 0;
+  }
+
+  .portfolio__title {
+    top: auto;
+    bottom: 40px;
+    color: #fff;
+  }
+
+  .portfolio__inner {
+    justify-content: flex-start;
+  }
+
+  .portfolio__col {
+    height: auto;
+    margin-right: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .portfolio__item {
+    margin-bottom: 44px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .portfolio__col__wrapper {
+    .portfolio__item {
+      &:last-child {
+        margin-bottom: 44px;
+      }
+    }
+  }
+}
+
+.basrelief__inner {
+  padding: 60px 0;
+}
+
+.basrelief__info {
+  width: 377px;
+}
+
+.basrelief__description {
+  background: #fff;
+  padding: 60px;
+  box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.1);
+}
+
+.basrelief__description__title {
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "EuropeExt";
+  margin-bottom: 35px;
+}
+
+.basrelief__description__text {
+  color: #666666;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.basrelief__description__form {
+  text-align: center;
+  .input {
+    background: #f3f3f3;
+  }
+}
+
+.basrelief__description__submit {
+  position: relative;
+  margin-top: 50px;
+
+  .go__over {
+    width: 140px;
+    height: 140px;
+
+    img {
+      transition: all 0.2s linear;
+    }
+
+    &:hover {
+      background: darken($color: $orange, $amount: 5);
+    }
+  }
+}
+
+.basrelief__description__submit__text {
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translate(-50%);
+  width: 163px;
+  min-width: 163px;
+}
+
+.basrelief__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+  .basrelief {
+    .portfolio__col {
+      margin-right: 0;
+    }
+
+    .portfolio__item {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 15px;
+      }
+    }
+
+    .portfolio__col__wrapper {
+      .portfolio__item {
+        &:last-child {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

@@ -103,4 +103,12 @@ $(document).ready(function () {
     evt.preventDefault();
     closeModal();
   });
+
+  // Показать ещё "Портфолио"
+  $(".portfolio__more").click((evt) => {
+    evt.preventDefault();
+    $(".portfolio__item--hide").fadeIn(200);
+    $(".portfolio__item--more").fadeOut(200);
+    $(".portfolio__hide__wrapper").slideDown(300);
+  });
 });
