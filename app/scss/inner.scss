@@ -12,6 +12,14 @@
   .contacts {
     padding-top: 60px;
   }
+
+  &--works {
+    background: #f3f3f3;
+
+    .connect {
+      background: url("../../images/dest/map__big.png") no-repeat center;
+    }
+  }
 }
 
 .about {
@@ -79,6 +87,12 @@
 @media (max-width: $mobile) {
   .inner {
     padding-top: 30px;
+  }
+
+  .feedback {
+    .contacts {
+      padding-top: 30px;
+    }
   }
 
   .about {

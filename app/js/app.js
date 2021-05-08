@@ -111,4 +111,89 @@ $(document).ready(function () {
     $(".portfolio__item--more").fadeOut(200);
     $(".portfolio__hide__wrapper").slideDown(300);
   });
+
+  // Наши работы (детальная)
+  $("#worksSlider1")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: true,
+      nextArrow: $("#worksNext1"),
+      prevArrow: $("#worksPrev1"),
+      asNavFor: "#worksNav1",
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+          },
+        },
+      ],
+    });
+
+  $("#worksNav1").not(".slick-initialized").slick({
+    arrows: false,
+    slidesToShow: 5,
+    asNavFor: "#worksSlider1",
+    focusOnSelect: true,
+  });
+
+  $("#worksSlider2")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: true,
+      nextArrow: $("#worksNext2"),
+      prevArrow: $("#worksPrev2"),
+      asNavFor: "#worksNav2",
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+          },
+        },
+      ],
+    });
+
+  $("#worksNav2").not(".slick-initialized").slick({
+    arrows: false,
+    slidesToShow: 5,
+    asNavFor: "#worksSlider2",
+    focusOnSelect: true,
+  });
+
+  $("#worksSlider3")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: true,
+      nextArrow: $("#worksNext3"),
+      prevArrow: $("#worksPrev3"),
+      asNavFor: "#worksNav3",
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+          },
+        },
+      ],
+    });
+
+  $("#worksNav3").not(".slick-initialized").slick({
+    arrows: false,
+    slidesToShow: 5,
+    asNavFor: "#worksSlider3",
+    focusOnSelect: true,
+  });
 });
