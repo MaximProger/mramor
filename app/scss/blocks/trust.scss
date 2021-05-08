@@ -55,12 +55,12 @@
       width: 152px;
       height: 93px;
       background: url("../../images/dest/trust/2.png") no-repeat center;
+      filter: grayscale(100%);
     }
 
     &:hover {
       .trust__img {
-        background: url("../../images/dest/trust/2--active.png") no-repeat
-          center;
+        filter: none;
       }
     }
   }
@@ -70,12 +70,14 @@
       width: 181px;
       height: 73px;
       background: url("../../images/dest/trust/3.png") no-repeat center;
+      filter: grayscale(100%);
+      opacity: 0.8;
     }
 
     &:hover {
       .trust__img {
-        background: url("../../images/dest/trust/3--active.png") no-repeat
-          center;
+        filter: none;
+        opacity: 1;
       }
     }
   }

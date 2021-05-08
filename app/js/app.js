@@ -196,4 +196,39 @@ $(document).ready(function () {
     asNavFor: "#worksSlider3",
     focusOnSelect: true,
   });
+
+  // Изделия
+  $(".products__nav__box").click(function (evt) {
+    evt.preventDefault();
+    $(".products__nav__box").removeClass("products__nav__box--active");
+    $(this).addClass("products__nav__box--active");
+  });
+
+  $("#productsSlider")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: true,
+      nextArrow: $("#productsNext"),
+      prevArrow: $("#productsPrev"),
+      asNavFor: "#productsNav",
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+          },
+        },
+      ],
+    });
+
+  $("#productsNav").not(".slick-initialized").slick({
+    arrows: false,
+    slidesToShow: 3,
+    asNavFor: "#productsSlider",
+    focusOnSelect: true,
+  });
 });
