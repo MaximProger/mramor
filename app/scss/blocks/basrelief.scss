@@ -1,5 +1,6 @@
 .basrelief {
   position: relative;
+  background: #f3f3f3;
 
   &--inner {
     .breadcrumbs__item {
@@ -53,6 +54,8 @@
 
 .basrelief__inner {
   padding: 60px 0;
+  position: relative;
+  z-index: 3;
 }
 
 .basrelief__inner__wrapper {
@@ -153,7 +156,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
 .basrelief__bg__wrapper {

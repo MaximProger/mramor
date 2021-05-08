@@ -16,7 +16,7 @@ $mobile-sm: 375px;
     font-style: $fstyle;
     font-weight: $fweight;
     src: local($fname), url($furl) format($format);
-    // font-display: swap; // Uncomment to initially display system fonts
+    font-display: fallback; // Uncomment to initially display system fonts
   }
 }
 
