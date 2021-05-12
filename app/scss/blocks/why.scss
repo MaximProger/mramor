@@ -25,6 +25,14 @@
   }
 }
 
+.why__left__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 415px;
+}
+
 .why__left {
   display: flex;
   align-items: center;
@@ -61,9 +69,6 @@
 }
 
 @media (max-width: $tablet) {
-}
-
-@media (max-width: $mobile) {
   .why {
     padding: 60px 0;
   }
@@ -75,6 +80,13 @@
   .why__item {
     flex-direction: column;
     padding: 20px 0;
+  }
+
+  .why__left__wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .why__left {
@@ -89,4 +101,7 @@
     width: 100%;
     text-align: center;
   }
+}
+
+@media (max-width: $mobile) {
 }
